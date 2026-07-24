@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+ 
+}
+.product-list {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.title {
+  font-size: 70px;
+  font-weight: 400px;
+  line-height: 78px;
+  margin: 0;
+  text-align: center;
+}
+.product-title {
+  font-size: 20px;
+  font-weight: 700px;
+  line-height: 27px;
+}
+
+.style-sheets {
+width: 340px;
+height: 573px;
+padding: 25px;
+background: #F7F7FA;
+;
+}
+.padding-img {
+padding: 25px;
+}
+.padding-txt {
+padding: 5px;
+}
+.main-text {
+   color: #515076;
+}
