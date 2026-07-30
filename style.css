@@ -1,13 +1,13 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 13px;
   line-height: 18px;
+   font-weight: 400;
 }
 
 .product-card__title {
   position: absolute;
   width: 846px;
-  height: 78px;
   left: 217px;
   top: 220px;
   font-weight: 400;
@@ -16,90 +16,49 @@ body {
   color: #515076;
 }
 
-.product-card__img-bg {
-  position: absolute;
-  width: 790px;
+.product-card__img-bg {  
+  background: url('img/dandelion.png') no-repeat;
   height: 697px;
+  width: 790px;
   top: 0;
   left: 85px;
  }
 
 .product-list {
+  color: #515076;
   position: absolute;
-  width: 1110px;
   height: 1191px;
-  top: 0gipx;
+  width: 1110px;
+  top: 408px;
   left: 85px;
   border-width: 1px;
   list-style-type: none;
   margin: 0; 
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  justify-content: center;
 }
 
-.product-title {
+.style-card {
+  width: 340px;
+  background: #F7F7FA;
+}
+.subtitle {
   font-size: 20px;
   font-weight: 700px;
-  line-height: 27px;
+  line-height: 27px;  
 }
 
-.style-mus {
-  position: absolute;
-  width: 340px;
-  height: 573px;
-  top: 408px;
-  left: 85px;
-  padding: 25px;
-  background: #F7F7FA;
-}
-
-.style-mask {
-  position: absolute;
-  width: 340px;
-  height: 573px;
-  top: 408px;
-  left: 470px;
-  padding: 25px;
-  background: #F7F7FA;
-}
-
-.style-gel {
-  position: absolute;
-  width: 340px;
-  height: 573px;
-  top: 408px;
-  left: 855px;
-  padding: 25px;
-  background: #F7F7FA;
-}
-
-.style-set_1 {
-  position: absolute;
-  width: 340px;
-  height: 573px;
-  top: 1026px;
-  left: 277px;
-  padding: 25px;
-  background: #F7F7FA;
-}
-
-.style-set_5 {
-  position: absolute;
-  width: 340px;
-  height: 573px;
-  top: 1026px;
-  left: 662px;
-  padding: 25px;
-  background: #F7F7FA;
-}
-
-.padding-img {
+.padding-card {
   padding: 25px;
 }
 
-.padding-txt {
-  padding: 5px;
+.price {
+  display: flex;
+  justify-content: space-between;
 }
-
-.main-text {
-   color: #515076;
+.upper-letter {
+  text-transform: uppercase;
 }
