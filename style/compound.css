@@ -1,0 +1,20 @@
+.compound {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+
+.compound__name {
+  margin: 0;
+  padding-bottom: 0px;
+}
+
+.compound__list {
+  margin: 0;
+  padding-top: 5px;
+  padding: 5px 25px 0px 20px;
+}
+
+.compound__item {
+  margin: 0;
+}
