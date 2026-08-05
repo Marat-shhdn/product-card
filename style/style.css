@@ -124,7 +124,7 @@ body {
 
 .card__compound {
   margin: 0;
-  padding-top: 25px;
+  padding-top: 15px;
   color: #515076;
 }
 
@@ -148,4 +148,12 @@ p {
 
 .products__item {
   width: 340px;
+}
+
+.firstColor {
+  background-color: #f016c1;
+}
+
+.secondColor {
+  background-color: #2419bb;
 }
