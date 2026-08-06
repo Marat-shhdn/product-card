@@ -150,10 +150,59 @@ p {
   width: 340px;
 }
 
-.firstColor {
-  background-color: #f016c1;
+.secondColor {
+  background-color: #cec440;
 }
 
-.secondColor {
-  background-color: #2419bb;
+.firstColor {
+  background-color: #5db96d;
+}
+
+#change-ColorFirstCard-Btn {
+  margin: 5px;
+  padding: 10px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #515076;
+}
+
+#change-ColorAllCards-Btn {
+  margin: 5px;
+  padding: 10px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #515076;
+}
+#go-google-Btn {
+  margin: 5px;
+  padding: 10px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #515076;
+}
+
+#msg-consoleLog-Btn {
+  margin: 5px;
+  padding: 10px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #515076;
+}
+
+#change-ButtonColor-Btn {
+  margin: 5px;
+  padding: 10px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #515076;
 }

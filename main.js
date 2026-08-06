@@ -52,8 +52,9 @@ catalogTitle.addEventListener("mouseenter", () => {
 
 // 6. Кнопка, при нажатии на которую поменятся её цвет.
 const changeButtonColorBtn = document.querySelector("#change-ButtonColor-Btn");
-const toggleColor = document.querySelector(".firstColor");
-changeButtonColorBtn.addEventListener("click", true, () => {
-  toggleColor.classList.toggle("secondColor");
-  console.log(changeButtonColorBtn.classList[0]);
+const deleteClass = document.querySelector(
+  "#change-ButtonColor-Btn.firstColor",
+);
+changeButtonColorBtn.addEventListener("click", () => {
+  deleteClass.classList.toggle("firstColor");
 });
