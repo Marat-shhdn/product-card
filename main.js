@@ -1,7 +1,7 @@
 // 1. Покраска первой карточки в один цвет
 const productFirstCard = document.querySelector(".products__item.card");
 const changeColorFirstCardBtn = document.querySelector(
-  "#change-ColorFirstCard-Btn",
+  "#change-color-first-card-btn",
 );
 const myColor = "#acbd4f";
 
@@ -13,7 +13,7 @@ changeColorFirstCardBtn.addEventListener("click", () => {
 // 2. Покраска всех карточек в один цвет
 const productALLCards = document.querySelectorAll(".products__item.card");
 const changeColorAllCardsBtn = document.querySelector(
-  "#change-ColorAllCards-Btn",
+  "#change-color-all-cards-btn",
 );
 const myAllColor = "#bd724f";
 changeColorAllCardsBtn.addEventListener("click", () => {
@@ -24,7 +24,7 @@ changeColorAllCardsBtn.addEventListener("click", () => {
 });
 
 // 3. Перейти на Google
-const goGoogleBtn = document.querySelector("#go-google-Btn");
+const goGoogleBtn = document.querySelector("#go-google-btn");
 
 goGoogleBtn.addEventListener("click", goToGoogle);
 function goToGoogle() {
@@ -35,7 +35,7 @@ function goToGoogle() {
 }
 
 // 4. Вывод в консоль информации о карточках
-const outputConsoleLogBtn = document.querySelector("#msg-consoleLog-Btn");
+const outputConsoleLogBtn = document.querySelector("#msg-console-Log-btn");
 outputConsoleLogBtn.addEventListener("click", () => {
   outputConsoleLog("Информация о карточках");
 });
@@ -51,10 +51,8 @@ catalogTitle.addEventListener("mouseenter", () => {
 });
 
 // 6. Кнопка, при нажатии на которую поменятся её цвет.
-const changeButtonColorBtn = document.querySelector("#change-ButtonColor-Btn");
-const deleteClass = document.querySelector(
-  "#change-ButtonColor-Btn.firstColor",
-);
-changeButtonColorBtn.addEventListener("click", () => {
-  deleteClass.classList.toggle("firstColor");
+const changeColor = document.querySelector("#change-color-btn");
+const changeClass = document.querySelector("#change-color-btn.first-color");
+changeColor.addEventListener("click", () => {
+  changeClass.classList.toggle("first-color");
 });

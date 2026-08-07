@@ -150,15 +150,15 @@ p {
   width: 340px;
 }
 
-.secondColor {
+.second-color {
   background-color: #cec440;
 }
 
-.firstColor {
+.first-color {
   background-color: #5db96d;
 }
 
-#change-ColorFirstCard-Btn {
+#change-color-first-card-btn {
   margin: 5px;
   padding: 10px;
   font-weight: 700;
@@ -168,7 +168,7 @@ p {
   color: #515076;
 }
 
-#change-ColorAllCards-Btn {
+#change-color-all-cards-btn {
   margin: 5px;
   padding: 10px;
   font-weight: 700;
@@ -177,17 +177,7 @@ p {
   line-height: 20px;
   color: #515076;
 }
-#go-google-Btn {
-  margin: 5px;
-  padding: 10px;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 17px;
-  line-height: 20px;
-  color: #515076;
-}
-
-#msg-consoleLog-Btn {
+#go-google-btn {
   margin: 5px;
   padding: 10px;
   font-weight: 700;
@@ -197,7 +187,17 @@ p {
   color: #515076;
 }
 
-#change-ButtonColor-Btn {
+#msg-console-Log-btn {
+  margin: 5px;
+  padding: 10px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #515076;
+}
+
+#change-color-btn {
   margin: 5px;
   padding: 10px;
   font-weight: 700;
