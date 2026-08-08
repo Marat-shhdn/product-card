@@ -124,7 +124,7 @@ body {
 
 .card__compound {
   margin: 0;
-  padding-top: 25px;
+  padding-top: 15px;
   color: #515076;
 }
 
@@ -148,4 +148,61 @@ p {
 
 .products__item {
   width: 340px;
+}
+
+.second-color {
+  background-color: #cec440;
+}
+
+.first-color {
+  background-color: #5db96d;
+}
+
+#change-color-first-card-btn {
+  margin: 5px;
+  padding: 10px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #515076;
+}
+
+#change-color-all-cards-btn {
+  margin: 5px;
+  padding: 10px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #515076;
+}
+#go-google-btn {
+  margin: 5px;
+  padding: 10px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #515076;
+}
+
+#msg-console-Log-btn {
+  margin: 5px;
+  padding: 10px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #515076;
+}
+
+#change-color-btn {
+  margin: 5px;
+  padding: 10px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #515076;
 }
