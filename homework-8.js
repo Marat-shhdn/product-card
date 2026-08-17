@@ -114,11 +114,14 @@ console.log(library);
 // Добавляем новое свойство для объекта "isRare (это редкий)" и в зависимости от года выпуска книги
 // (или какой-то логики, связанной с вашей сущностью), устанавливаем true или false.
 // Что я хочу этим сказать: если книга выпущена позже 2000 года, устанавливаем true (да, это редкий), нет - false (значит это не редкий).
-const getInfrequentReader = arrayReaders.map((reader) => {
-  if (reader.countBooks < 3) {
-    return { ...reader, isRare: true };
-  } else {
-    return { ...reader, isRare: false };
-  }
-});
-console.log(infrequentReader);
+function getStatusOfReader(arr) {
+  return arr.map((reader) => {
+    reader.countBooks <= 3 ? (reader.isRare = true) : (reader.isRare = false);
+  });
+}
+getStatusOfReader(arrayReaders);
+arrayReaders.map((reader) =>
+  reader.isRare === true
+    ? console.log(`Читатель ${reader.name} редкий посетитель библиотеки.`)
+    : console.log(`Читатель ${reader.name} частый посетитель библиотеки.`),
+);
