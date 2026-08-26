@@ -58,3 +58,24 @@ console.log(emailArrMap);
 // 12. Почитать про методы toString(), join() и перебрав массив с задания №11, привести его к строке.
 console.log(emailArr.toString());
 console.log(emailArrMap.join(`, -> `));
+
+// Создать массив чисел от 1 до 10. Отфильтровать его таким образом, что бы мы получил массив чисел, начиная с 5.
+// Для того тог чтобы отсеить числа меньше 5 используем filter,
+// так как filter удаляет не соответствующие условию элементы в отличие от map
+const newNumbers = [1, 5, 3, 4, 5, 6, 7, 8, 9, 10];
+const newArr = newNumbers.filter((number) => number >= 5);
+console.log(newArr);
+
+// попробуйте сделать функцию, которая принимает название мебели и если она присутствует в массиве,
+// то возвратите true, в ином случае возвратите false.
+// Также сделайте валидацию на входные данные, если пользователь прокинул число, объект, массив или любой другой тип,
+// который не является строкой, то возвращайте сообщение "Название мебели должно быть строкой"
+const newFurniture = ["Стул", "Стол", "Шкаф", "Диван", "Кресло"];
+function getStatusOfFurniture(furniture) {
+  if (typeof furniture === `string`) {
+    return newFurniture.includes(furniture);
+  } else return "Название мебели должно быть строкой";
+}
+console.log(getStatusOfFurniture("Шкаф"));
+console.log(getStatusOfFurniture("Самолет"));
+console.log(getStatusOfFurniture(123));
