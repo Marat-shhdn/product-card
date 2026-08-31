@@ -1,7 +1,7 @@
 const products = [
   {
     cardImage: {
-      imageUrl: "img/mousse.png",
+      imageUrl: "mousse.png",
       imageAlt: "Увлажняющий мусс",
       width: "290",
       height: "245",
@@ -14,11 +14,11 @@ const products = [
       "витамины С, А, РР, В И Е",
       "солнцезащитные компоненты",
     ],
-    price: "2 750 &#8381;",
+    price: "2 750",
   },
   {
     cardImage: {
-      imageUrl: "img/mask.png",
+      imageUrl: "mask.png",
       imageAlt: "Увлажняющая маска",
       width: "290",
       height: "245",
@@ -27,11 +27,11 @@ const products = [
     title: "Увлажняющая маска",
     description: "Способствует удерживанию влаги в верхних слоях кожи.",
     itemCompound: ["воски", "минералы", "масла"],
-    price: "3 500 &#8381;",
+    price: "3 500",
   },
   {
     cardImage: {
-      imageUrl: "img/gel.png",
+      imageUrl: "gel.png",
       imageAlt: "Гель для умывания",
       width: "290",
       height: "245",
@@ -44,11 +44,11 @@ const products = [
       "витамины С, А, РР, В И Е",
       "солнцезащитные компоненты",
     ],
-    price: "2 750 &#8381;",
+    price: "2 750",
   },
   {
     cardImage: {
-      imageUrl: "img/set_1.png",
+      imageUrl: "set_1.png",
       imageAlt: "Подарочный набор №1",
       width: "290",
       height: "245",
@@ -57,11 +57,11 @@ const products = [
     title: "Подарочный набор №1",
     description: "Набор, состоящий из увлажняющего крема и маски.",
     itemCompound: ["воски", "минералы", "масла"],
-    price: "4 750 &#8381;",
+    price: "4 750;",
   },
   {
     cardImage: {
-      imageUrl: "img/set_5.png",
+      imageUrl: "set_5.png",
       imageAlt: "Подарочный набор №5",
       width: "290",
       height: "245",
@@ -71,9 +71,10 @@ const products = [
     description:
       "Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.",
     itemCompound: ["воски", "минералы", "масла"],
-    price: "7 520 &#8381;",
+    price: "7 520",
   },
 ];
+const PATH_IMG = "img/";
 function getCountCards() {
   let howCardsYourNeed = +prompt(
     "Сколько карточек вывести?",
@@ -92,34 +93,39 @@ function getCountCards() {
   return howCardsYourNeed;
 }
 let limit = getCountCards();
-
-const productsList = document.querySelector(".products");
-const productstemplate = document.getElementById("products-template");
-products.slice(0, limit).forEach((product) => {
-  const productClone = productstemplate.content.cloneNode(true);
-  const imgElement = productClone.querySelector(".card__image");
-  console.log("Список продуктов:", productsList);
-  console.log("Шаблон из HTML:", productstemplate);
-  imgElement.src = product.cardImage.imageUrl;
-  imgElement.alt = product.cardImage.imageAlt;
-  imgElement.width = product.cardImage.width;
-  imgElement.height = product.cardImage.height;
-  productClone.querySelector(".card__category").textContent = product.category;
-  productClone.querySelector(".card__title").textContent = product.title;
-  productClone.querySelector(".card__description").textContent =
-    product.description;
-  const compoundlist = productClone.querySelector(".compound__item");
-  product.itemCompound.forEach((item) => {
-    const li = document.createElement("li");
-    li.textContent = item;
-    compoundlist.appendChild(li);
+function getCard(card) {
+  const productsList = document.querySelector(".products");
+  const productstemplate = document.getElementById("products-template");
+  card.slice(0, limit).forEach((product) => {
+    const productClone = productstemplate.content.cloneNode(true);
+    const imgElement = productClone.querySelector(".card__image");
+    console.log("Список продуктов:", productsList);
+    console.log("Шаблон из HTML:", productstemplate);
+    imgElement.src = PATH_IMG + product.cardImage.imageUrl;
+    imgElement.alt = product.cardImage.imageAlt;
+    imgElement.width = product.cardImage.width;
+    imgElement.height = product.cardImage.height;
+    productClone.querySelector(".card__category").textContent =
+      product.category;
+    productClone.querySelector(".card__title").textContent = product.title;
+    productClone.querySelector(".card__description").textContent =
+      product.description;
+    const compoundlist = productClone.querySelector(".compound__item");
+    product.itemCompound.forEach((item) => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      compoundlist.appendChild(li);
+    });
+    productClone.querySelector(".price__value").textContent = product.price;
+    productsList.appendChild(productClone);
   });
-  productClone.querySelector(".price__value").innerHTML = product.price;
-  productsList.appendChild(productClone);
-});
-console.log(productsList);
+  console.log(productsList);
+}
+getCard(products);
+
 // Используя метод .reduce(), получить массив объектов,
-// где ключем является название продукта, а значением - его описание
+// где ключем является название продукта, а значением - его описание. использовал метод push, чтобы добавить
+// в массив, объекты установил чере {}. В [] определяется значения ключа в массиве
 const titleDiscriptionArray = products.reduce((acc, product) => {
   acc.push({ [product.title]: product.description });
   return acc;
