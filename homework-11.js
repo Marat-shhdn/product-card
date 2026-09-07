@@ -8,9 +8,10 @@ const modalForm = document.querySelector(".modal__form");
 
 // форма отправки почты для рассылки рекламных акций
 emailFormFooter.addEventListener("submit", (event) => {
+  //без строки ниже браузер перезагружает страницу и объект исчезает из памяти,
+  event.preventDefault();
   const form = event.target;
   const formData = new FormData(form);
-  event.preventDefault();
   const data = Object.fromEntries(formData.entries());
   console.log(data);
 });
@@ -27,9 +28,10 @@ closeModal.addEventListener("click", () => {
 
 // Получение объекта со значениями полей формы для регистрации, с проверкой совпадения паролей
 modalForm.addEventListener("submit", (event) => {
+  //без строки ниже браузер перезагружает страницу и объект исчезает из памяти,
+  event.preventDefault();
   // Проверяем совпадение паролей
   if (password.value !== checkPassword.value) {
-    event.preventDefault(); // Блокируем отправку формы
     alert("Пароли не совпадают! Пожалуйста, проверьте ввод.");
     // Подсвечиваем поле повтора пароля красным цветом
     checkPassword.style.borderColor = "red";
@@ -38,8 +40,6 @@ modalForm.addEventListener("submit", (event) => {
     checkPassword.addEventListener("input", () => {
       checkPassword.style.borderColor = "";
     });
-    //без строки ниже браузер перезагружает страницу и объект исчезает из памяти,
-    event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
