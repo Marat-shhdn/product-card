@@ -28,6 +28,8 @@
         <button id="change-color-btn" class="first-color second-color">
           Нажми, чтобы поменять цвет
         </button>
+
+        <button id="registration-btn">Регистрация</button>
         <ul class="products clear-list">
           <li>
             <div class="products__item card">
@@ -177,9 +179,124 @@
         </ul>
       </div>
     </main>
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__content">
+          <p class="footer__title">Product Cards</p>
+          <p class="footer__description">
+            У нас самые лучшие продукты для кожи!
+          </p>
+        </div>
+        <form class="footer__form form">
+          <label class="form__label" for="email"
+            >Подпишись на наши акции:</label
+          >
+          <div class="form__subscribe">
+            <input
+              class="form__input"
+              type="email"
+              placeholder="Введите email"
+              name="email"
+              id="email"
+              required
+            />
+            <button type="submit" id="subscribeBtn" class="form__button">
+              Подписаться
+            </button>
+          </div>
+        </form>
+        <nav>
+          <p class="nav__menu">Быстрые ссылки</p>
+          <ul class="clear-list">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <p class="footer_social">
+          <a href="https://t.me" target="_blank">
+            <!-- Путь ведет в папку images на вашем компьютере -->
+            <img src="img/tg.svg" alt="Telegram" width="21" height="17.61" />
+          </a>
+          <a href="https://vk.com" target="_blank">
+            <!-- Путь ведет в папку images на вашем компьютере -->
+            <img src="img/vk.svg" alt="ВКонтакте" width="24" height="14" />
+          </a>
+        </p>
+      </div>
+      <div class="footer__line"></div>
+      <div class="footer__copyright">
+        <p>www.product-cards.com©all right reserve</p>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <span class="close-btn">&times;</span>
+        <form class="modal__form">
+          <label class="modal__item" for="email"
+            >Зарегистрируйтесь в качестве пользователя</label
+          >
+          <input
+            class="modal__item"
+            placeholder="Введите свое имя"
+            name="userName"
+            required
+            minlength="2"
+          />
+          <input
+            class="modal__item"
+            placeholder="Введите свою фамилию"
+            name="userSurname"
+            required
+            minlength="2"
+          />
+          <input
+            class="modal__item"
+            placeholder="Введите дату рождения"
+            name="dateOfBirth"
+            type="date"
+            required
+          />
+          <input
+            class="modal__item"
+            placeholder="Введите номер телефона"
+            name="numberOfTelephone"
+            type="tel"
+          />
+          <input
+            class="modal__item"
+            placeholder="Введите ваш логин"
+            name="login"
+            type="text"
+            required
+            minlength="2"
+          />
+          <input
+            class="modal__item"
+            placeholder="Введите ваш пароль"
+            type="password"
+            name="password"
+            required
+            id="password"
+          />
+          <input
+            class="modal__item"
+            placeholder="Повторите пароль"
+            type="password"
+            name="checkPassword"
+            required
+            id="checkPassword"
+          />
+          <button class="modal__item" type="submit">Oтnpaвить</button>
+        </form>
+      </div>
+    </div>
     <script src="main.js"></script>
     <script src="homework-7.js"></script>
     <script src="homework-8.js"></script>
     <script type="module" src="homework-9.js"></script>
+    <script type="module" src="homework-11.js"></script>
   </body>
 </html>

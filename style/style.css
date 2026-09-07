@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1280px;
   margin: 0px auto;
 }
 
@@ -135,8 +135,7 @@ body {
   color: #515076;
 }
 
-.card_description,
-p {
+p.card_description {
   margin-bottom: 15px;
 }
 .products {
@@ -205,4 +204,288 @@ p {
   font-size: 17px;
   line-height: 20px;
   color: #515076;
+}
+
+.footer {
+  position: relative;
+  max-width: 1728px;
+  min-height: 477px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat;
+  background-color: #3a3a3a;
+  color: #ffffff;
+  padding: 85px 75px 28px 84px;
+}
+
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 1569px;
+  height: 147px;
+  position: relative;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 154%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  width: 409px;
+  height: 87px;
+}
+
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 800px;
+  font-style: ExtraBold;
+  font-size: 28px;
+  line-height: 154%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+
+.footer__description {
+  font-weight: 400;
+  margin: 0;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 154%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+
+.footer__form {
+  width: 477px;
+  height: 103px;
+  padding: 0;
+  margin: 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  /*Закрепляем форму строго по середине так как flex не дает такой возможности*/
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.form__label {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+.form__subscribe {
+  display: flex; /* Включаем флексы — это выровняет элементы идеально в ряд */
+  align-items: stretch;
+  width: 477px;
+  height: 61px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.form__input {
+  width: 60%;
+  height: 100%;
+  padding: 0;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 1px solid #ccc; /* Задаем одинаковую тонкую рамку */
+  border-right: none; /* Убираем её на стыке, чтобы не было двойной линии */
+  margin-right: -1px;
+  border-radius: 10px 0 0 10px;
+  outline: none; /* Убираем дефолтную обводку при клике */
+}
+
+.form__button {
+  padding: 0;
+  width: 40%;
+  height: 100%;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #ccc; /* Точно такая же рамку, как у инпута */
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.form__subscribe::after {
+  content: ""; /* Обязательное свойство, иначе псевдоэлемент не отобразится */
+  position: absolute;
+  /*Смещаем в лево на 60% */
+  left: 60%;
+  top: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Эти две строки центрируют полоску по вертикали */
+  /* НАСТРОЙКА РАЗМЕРОВ ПОЛОСКИ */
+  width: 2px; /* Толщина (ширина) вашей полоски */
+  height: 50%; /* ВЫСОТА ПОЛОСКИ (поменяйте на свой вкус, например 50% или 25px) */
+  background-color: #3a3a3a; /* Цвет полоски */
+  pointer-events: none; /* Чтобы полоска не мешала кликать по форме */
+}
+
+nav a {
+  width: 74px;
+  height: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.nav__menu {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.footer_social {
+  display: flex;
+  gap: 30.5px;
+  position: absolute;
+  bottom: 0; /* Отступ 20px от нижнего края родителя */
+  left: 0; /* Отступ 20px от левого края родителя */
+}
+
+.footer__line {
+  padding: 0;
+  /* ЦЕНТРИРОВАНИЕ: */
+  /* 162px сверху, auto по бокам (выравнивает по центру), 33px снизу */
+  margin: 162px auto 33px auto;
+  /* Размеры и внешний вид полоски */
+  width: 66px; /* Задайте нужную вам ширину полоски */
+  height: 1px; /* Толщина полоски */
+  background-color: #ffffff; /* Цвет полоски: белый */
+}
+
+.footer__copyright {
+  display: flex;
+  justify-self: center;
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+#registration-btn {
+  font-family: Montserrat;
+  color: #515076;
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 600px;
+  font-weight: 800px;
+  font-style: ExtraBold;
+  font-size: 28px;
+  line-height: 154%;
+  letter-spacing: 0%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal.showed {
+  display: block;
+}
+
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный */
+}
+
+.modal__content {
+  position: relative;
+  background-color: #fff;
+  margin: 15% auto; /* Отступ сверху и центрирование */
+  padding: 30px;
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column; /* Выстраивает инпуты вертикально */
+  gap: 15px; /* Делает аккуратные отступы КРАСИВЫМИ между инпутами */
+  margin-top: 30px;
+}
+
+.modal__item {
+  font-family: Montserrat;
+  font-weight: 800px;
+  font-style: ExtraBold;
+  font-size: 28px;
+  line-height: 154%;
+  letter-spacing: 0%;
+  height: 60px;
+  width: 100%;
 }
