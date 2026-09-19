@@ -5,7 +5,6 @@ class Drink {
     this.name = name;
     this.size = size;
     this.price = price;
-    this.#temperature;
   }
 
   showDrinkInfo() {
@@ -32,7 +31,6 @@ class Drink {
     console.log(`Для приготовления напиток нагрели до ${this.getTempDrink()}`);
     const state = this.#makeDrink();
     if (state === `напиток не готов`) return `Извините ${state}`;
-    else
       return `Вот ваш ${this.name} с вас ${this.price} рублей(да! расчет в рублях ведется)`;
   }
 }
@@ -43,8 +41,10 @@ class Coffe extends Drink {
     this.milk = milk;
     this.syrup = syrup;
   }
+
   showDrinkInfo() {
     super.showDrinkInfo();
+
     return `${this.milk}, ${this.syrup}`;
   }
 }
@@ -55,8 +55,10 @@ class Tea extends Drink {
     this.tea = tea;
     this.milk = milk;
   }
+
   showDrinkInfo() {
     super.showDrinkInfo();
+
     return `${this.tea}, ${this.milk}`;
   }
 }
@@ -67,8 +69,10 @@ class FruitDrink extends Drink {
     this.firstFruit = firstFruit;
     this.secondFruit = secondFruit;
   }
+
   showDrinkInfo() {
     super.showDrinkInfo();
+    
     return `${this.firstFruit}, ${this.secondFruit}`;
   }
 }
@@ -78,16 +82,18 @@ class Cafe {
     this.name = name;
     this.address = address;
   }
+
   showCafeInfo() {
     return `Кафе ${this.name} находится по адресу ${this.address}`;
   }
+
   serveCostomer(drink, temp) {
     return drink.giveDrink(temp);
   }
 }
 
 const latte = new Coffe("Latte", "200ml", "100", "50ml", "almond");
-const expresso = new Coffe("Expresso", "30ml", "90", "without milk", "almond");
+const espresso = new Coffe("Expresso", "30ml", "90", "without milk", "almond");
 const blacktea = new Tea("Black Tea", "150ml", "120", "Nilgiri", "50ml");
 const cafeSea = new Cafe("Sea", "London, Avenu st, 58");
 console.log(cafeSea.showCafeInfo());
