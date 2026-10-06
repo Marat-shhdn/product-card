@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Петр",
+    "surname": "Иванов",
+    "email": "P@mail.com",
+    "age": 21
+  },
+  {
+    "id": 2,
+    "name": "Василий",
+    "surname": "Петров",
+    "email": "V@mail.com",
+    "age": 21
+  },
+  {
+    "id": 3,
+    "name": "Иван",
+    "surname": "Васильиев",
+    "email": "I@mail.com",
+    "age": 21
+  },
+  {
+    "id": 4,
+    "name": "Владимр",
+    "surname": "Козлов",
+    "email": "K@mail.com",
+    "age": 21
+  },
+  {
+    "id": 5,
+    "name": "Елена",
+    "surname": "Смирнова",
+    "email": "E.smirnova@mail.com",
+    "age": 24
+  },
+  {
+    "id": 6,
+    "name": "Алексей",
+    "surname": "Петров",
+    "email": "alex.p@mail.com",
+    "age": 30
+  },
+  {
+    "id": 7,
+    "name": "Анна",
+    "surname": "Кузнецова",
+    "email": "kuznetsova.anya@mail.com",
+    "age": 19
+  },
+  {
+    "id": 8,
+    "name": "Дмитрий",
+    "surname": "Соколов",
+    "email": "dima.sok@mail.com",
+    "age": 28
+  },
+  {
+    "id": 9,
+    "name": "Ольга",
+    "surname": "Попова",
+    "email": "olga.popova@mail.com",
+    "age": 35
+  },
+  {
+    "id": 10,
+    "name": "Михаил",
+    "surname": "Лебедев",
+    "email": "m.lebedev@mail.com",
+    "age": 22
+  }
+]
