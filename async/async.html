@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASYNC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- Левая колонка с кнопками (Сайдбар) -->
+      <aside class="controls-sidebar">
+        <button id="fetch-all-btn">Загрузить данные</button>
+        <div class="controls-sidebar__input">
+          <label for="card-add-input">Поиск и добавление карточки</label>
+          <input
+            placeholder="Введите номер картоки"
+            type="number"
+            min="1"
+            max="10"
+            id="card-add-input"
+          />
+          <button id="card-add-btn">Показать</button>
+        </div>
+        <div class="controls-sidebar__input">
+          <label for="card-delete-input">Удаление карточки</label>
+          <input
+            placeholder="Введите номер картоки"
+            type="number"
+            min="1"
+            max="10"
+            id="card-delete-input"
+          />
+          <button id="card-delete-btn">ُУдалить</button>
+        </div>
+        <button id="clear-all-btn">Удалить все</button>
+      </aside>
+
+      <!-- Правая колонка с карточками -->
+      <div class="cards-container">
+        <ul id="users-list" class="users-list">
+          Загрузка данных...
+        </ul>
+      </div>
+    </div>
+    <script type="module" src="async.js"></script>
+  </body>
+</html>
